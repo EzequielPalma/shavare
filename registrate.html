@@ -33,7 +33,7 @@
                 <div id="itemsCuentaBuscador">
                 <div id="itemsCuentaUsuario">
                     <a href="registrate.html" class="boton">Registrate!</a>
-                    <a href="" class="boton">Inicia sesión!</a>
+                    <a href="login.html" class="boton">Inicia sesión!</a>
                 </div>
                 <div id="buscador">
                     <input  id="areaBuscador" type="text" placeholder="Buscar...">
@@ -48,7 +48,8 @@
                 <a href="top-usuarios.html" class="boton">Top usuarios</a>
                 
                 
-            </div>            </header>
+            </div>            
+        </header>
     
     
 
@@ -58,74 +59,74 @@
         <!--Agregué link de iconos/fuente monserrat-->
         <!--empleando la metodologia BEM-->
 
-        <section>
-            <header class="register-titulo">
+        <section class="content-form">
+            <header class="form-titulo">
                 <i class="fa-regular fa-pen-to-square"></i>
                 <h1>Registro</h1>
             </header>
             <form action='/'  method="post" class="formulario"  id="formulario" >
 
                 <!--Grupo Nombre-->
-                <div class="formulario__grupo"  id="grupo__nombre">
+                <section class="formulario__grupo"  id="grupo__nombre">
                     <label for="nombre" class="formulario__label">Nombre</label>
                     <div class="formulario__grupo-input">
                         <input type="text" id="nombre" name="nombre" class="formulario__input"  placeholder="Ana">
                         <i class="formulario__validacion-estado fa-solid fa-circle-exclamation"></i>
                     </div>
                     <p class="formulario__input-error">El nombre debe contener letras.</p>
-                </div>
+                </section>
 
                 <!--Grupo correo electronico-->
-                <div class="formulario__grupo" id="grupo__correo">
+                <section class="formulario__grupo" id="grupo__correo">
                     <label for="correo" class="formulario__label">Correo Electrónico</label>
                     <div class="formulario__grupo-input">
                         <input type="email" class="formulario__input" id="correo" name="correo" placeholder="correo@com" >
                         <i class="formulario__validacion-estado fa-solid fa-circle-exclamation"></i>
                     </div>
                     <p class="formulario__input-error">El nombre debe de tener</p>
-                </div>
+                </section>
 
                 <!--Grupo password-->
-                <div class="formulario__grupo" id="grupo__password">
+                <section class="formulario__grupo" id="grupo__password">
                     <label for="password"  class="formulario__label">Contraseña</label>
                     <div class="formulario__grupo-input">
                         <input type="password" class="formulario__input" id="password" name="password" >
                         <i class="formulario__validacion-estado fa-solid fa-circle-exclamation"></i>
                     </div>
                     <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 digitos</p>
-                </div>
+                </section>
 
                 <!--Grupo password2-->
-                <div class="formulario__grupo" id="grupo__password2">
+                <section class="formulario__grupo" id="grupo__password2">
                     <label for="password2" class="formulario__label">Repetir contraseña</label>
                     <div class="formulario__grupo-input">
                         <input type="password" class="formulario__input" id="password2" name="password2" >
                         <i class="formulario__validacion-estado fa-solid fa-circle-exclamation"></i>
                     </div>
                     <p class="formulario__input-error">Ambas contraseñas deben ser iguales</p>
-                </div>
+                </section>
 
                 
                 
                 
                 <!--Terminios y condiciones-->
-                    <div class="formulario__grupo" id="grupo_terminos">
+                    <section class="formulario__grupo" id="grupo_terminos">
                         <label for="terminos" class="formulario__label">
                             <input  class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">Acepto los términos y condiciones
                         </label>
-                    </div>
+                    </section>
 
                 <!--Error-->
-                <div class="formulario__mensaje" id="formulario__mensaje">
+                <section class="formulario__mensaje" id="formulario__mensaje">
                     <p><i class="fa-solid fa-triangle-exclamation"></i> <strong>Rellena el formulario correctamente</strong></p>
-                </div>
+                </section>
 
                 
                 <!--Boton-->
-                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <section class="formulario__grupo formulario__grupo-btn-enviar">
                     <button type="submit" class="formulario__btn">Enviar</button>
                     <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
-                </div>
+                </section>
             </form>
         </section>
     </main>
