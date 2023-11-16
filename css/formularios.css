@@ -410,6 +410,10 @@ a.boton:hover {
   margin: 20px 0 20px 0;
 }
 
+.enlace:hover{
+  color:#138DC7; 
+}
+
 
 /* Estilos para validación */
 
