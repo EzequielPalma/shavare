@@ -1,0 +1,391 @@
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+   
+    background-color: #81B5F3;
+    color: black;
+    
+    font-family: sans-serif;
+   
+    font-size: 27px;
+    text-decoration: none;
+}
+    
+  
+  .navBar {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../images/banner.jpg);
+    height: 210px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: unset;
+
+  }
+
+  .navLogo {
+    top: 44px;
+    margin-left: 20px;
+    position: relative;
+
+
+  }
+
+  
+
+
+
+  .navItems {
+    margin: 15px;
+    width: 100%;
+   
+   
+  }
+
+  #items {
+    top: 250px;
+    position: sticky;
+    left: 330px;
+  }
+
+  .navToggle {
+    display: none;
+  }
+
+  #buscador {
+    display: flex;
+    position: sticky;
+    top: 169px;
+    left: 1100px;
+    margin-bottom: 8px;
+    font-size: 20px;
+  }
+
+  #itemsCuentaUsuario{
+    margin: 15px 0px 18px 0px;
+    bottom: 20px;
+    position: sticky;
+    right: 113px;
+  }
+
+  #itemsCuentaBuscador {
+    top: -60px;
+    left: 1000px;
+    position: absolute;
+  }
+
+  
+  @media(max-width:500px){
+    
+    .navLogo img {
+    width: 64vw;
+  }
+
+  }
+
+  @media (max-width:1024px) {
+    
+    .navBar {
+        flex-direction: column;
+    }
+    
+    .navItems{
+        display: flex;
+        flex-direction: column;
+        top: 195px;
+        width: 100%;
+        height: 110%;
+        background-color: #81B5F3;
+        margin: 30px auto 15px auto;
+        transform: translateX(-160%);
+        transition: 0.3s ease all;
+        text-align: center;
+        align-items: center;
+        right: 0px;
+        max-width: none;
+    }
+
+    #items {
+        top: 190px;
+        right: 0px;
+        position: absolute;
+        left:0px
+      }
+
+      #buscador {
+        position: sticky;
+        left: 100px;
+        top: 200px
+      }
+
+    .navItems a {
+        width: 80%;
+    }
+
+    .navToggle {
+        display: flex !important;
+        flex-direction: column;
+       
+        margin: 10px auto 10px auto;
+        position: relative;
+        
+    }
+
+   
+
+    .navToggle span {
+        width: 30px;
+        height: 4px;
+        background: white;
+        margin-bottom: 5px;
+        border-radius: 2px;
+        transform-origin: 5px 0px;
+        transition: all 0.2s linear;
+        position: sticky;
+    }
+
+    .close span {
+        transform: rotate(45deg) translate(0px, 0px);
+    }
+
+    .close span:nth-child(2) {
+        display: none;
+    
+    }
+
+    .close span:nth-child(3) {
+        transform: rotate(-45deg) translate(-5px, 1px);
+
+    }
+
+    .open {transform: translateX(0) !important;}
+
+    .navLogo {
+        margin: 0px auto 0px auto;
+    }
+
+    #itemsCuentaUsuario {
+        position: static;  
+    }
+
+    #itemsCuentaBuscador {
+        
+        position: static;
+      }
+  }
+    
+  
+ 
+  
+
+  
+  nav.botones-menu {
+    margin-top:60px;
+    margin-left:20px;
+    position: absolute;
+  }
+  
+  nav.registro-inicio {
+   position: relative;
+   left: 374px;
+  
+  }
+  
+  a.logo {
+  margin-bottom: 70px;
+  }
+  
+  a.boton{
+    
+    background-color: #138DC7;
+    color: #ffffff;
+    padding: 6px 12px 6px 12px;
+    font-size: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 10px 0px ;
+  }
+  
+  a.boton:hover {
+    cursor: grab;
+    background-color: grey;
+    color: white;
+  
+  
+  }
+  
+  .icono {
+    width: 20px;
+    
+  }
+  
+  p {
+    font-size: 20px;
+  }
+  
+  a:hover {
+    cursor: grab;
+    color: white;
+  
+  
+  }
+  
+  
+  .cont-main{
+    margin: 15px;
+    font-size: 20px;
+  }
+  
+  
+  .top-30{
+    background-color: #253A4E;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 18px;
+    width: 230px;
+    height: 36px;
+    border-radius: 10px;
+  }
+  .caja {
+    margin-top: 20px;
+    background-color: #ccc;
+    padding: 20px;
+    width: 90%;
+    border-radius:15px;
+  }
+  
+  .titulo {
+    color:#233f5a;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .contenido {
+    display: flex;
+  }
+  
+  .parrafo {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .imagen {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .imagen img {
+    max-width: 100%;
+    max-height: 200px;
+  }
+  
+  .caja-abajo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+    width: 92%;
+    background-color: #ccc;
+    padding: 5px;
+    border-radius: 15px;
+  }
+  
+  .imagen-rrss {
+    margin-right: 5px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+  }
+  .imagen-rrss img{
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+  .estrellas {
+    display: flex;
+    align-items: center;
+  }
+  .valoracion{
+    margin-right: 5px;
+    margin-left: 5px;
+    font-style: italic;
+  }
+  footer{
+    display:flex;
+    justify-content: center;
+    background-color: #ccc;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  
+  .botonera-abajo{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    margin: 0px auto; 
+    font-size: 2.5vw;
+  }
+  
+  .navegacion {
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .numero {
+    margin: 5px;
+  }
+  
+  .separador {
+    margin: 5px;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  
+  
+  
+  
+  
+  .botonBusqueda {
+    height: 15px;
+    background-color: #138DC7;
+    border-radius: 500px;
+    padding: 4px;
+  }
+  
+    
+  .botonAreaBusqueda {
+      background-color: #138DC7;
+      border-radius: 500px;
+      border: none;
+      margin-left: 10px;
+    }
+  
+    #areaBuscador {
+      width: 258px;
+      border-radius: 30px;
+      border: none;
+      font-size: 13px;
+      border-radius: 30px;
+    }
+  
+    #botonAreaBusqueda:hover {
+      cursor: grab;
+     
+      color: white;
+    }
