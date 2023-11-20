@@ -111,7 +111,7 @@ body {
   }
 
   #items {
-      top: 190px;
+      top:117px;
       right: 0px;
       position: absolute;
       left:0px
@@ -391,3 +391,33 @@ a {
    
     color: white;
   }
+
+  @media (max-width:440px) {
+
+    .estrellas img {
+      width: 2vw;
+      height: auto;
+    }
+
+    .valoracion {
+      font-size: 4vw;
+    }
+
+    .imagen-rrss img {
+      width: 2vw;
+      height: auto;
+    }
+
+  }
+
+
+  @media(max-width:500px){
+
+    .navBar {
+      min-height: 132px;
+      height: 40vw;  }
+
+      #areaBuscador {
+        width: 50vw;
+    }
+    }

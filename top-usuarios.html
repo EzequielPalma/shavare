@@ -1,74 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Shavare</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="images/favicon.png">
-    <link rel="stylesheet" href="css/top-usuarios.css">
-</head>
-
+    
+    <head>
+         <meta charset="UTF-8">
+        <title>Shavare</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/jpg" href="images/favicon.png">
+        <link rel="stylesheet" href="../css/top-usuarios.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        
+    
+    </head>
 <body>
 
     <header>
-        <a href="index.html" class="logo">
-            <img src="images/logo.png" alt="logo">
-        </a>
+       
+        <nav class="navBar">
+            <div class="navLogo">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+            </div>
 
-        <nav class="botones-menu">
-            <a href="recursos.html" class="boton">RECURSOS</a>
-            <a href="subir-hilo.html" class="boton">SUBIR</a>
-            <a href="perfil.html" class="boton">PERFIL</a>
-            <a href="top-usuarios.html" class="boton">TOP USUARIOS</a>
+            <div class="navToggle" id="toggle">
+                <span></span>
+                <span></span>
+                <span></span>                         
+            </div>
+            
+            <div class="navItems" id="items">
+                <div id="itemsCuentaBuscador">
+                    <div id="itemsCuentaUsuario">
+                        <a href="registrate.html" class="boton">Registrate!</a>
+                        <a href="login.html" class="boton">Inicia sesión!</a>
+                    </div>
+                    <div id="buscador">
+                        <input  id="areaBuscador" type="text" placeholder="Buscar...">
+                        <button class="botonAreaBusqueda" type="submit" title="enviar la busqueda"><img class="botonBusqueda" src="images/v98_3427.png" alt=""></button>
+                        <button class="botonAreaBusqueda" type="submit" title="busqueda avanzada"><img class="botonBusqueda" src="images/plus.png" alt=""></button>                         
+                    </div>
+               </div>
 
-
+                <a href="recursos.html" class="boton">RECURSOS</a>
+                <a href="subir-hilo.html" class="boton">SUBIR</a>
+                <a href="perfil.html" class="boton">PERFIL</a>
+                <a href="top-usuarios.html" class="boton">TOP USUARIOS</a>
+                
+                
+            </div>
+       
         </nav>
-
-        <div id="buscador">
-            <input id="areaBuscador" type="text" placeholder="Buscar...">
-            <button class="botonAreaBusqueda" type="submit" title="enviar la busqueda"><img class="botonBusqueda"
-                    src="images/v98_3427.png" alt=""></button>
-            <button class="botonAreaBusqueda" type="submit" title="busqueda avanzada"><img class="botonBusqueda"
-                    src="images/plus.png" alt=""></button>
-        </div>
-
-
-
-        <nav class="registro-inicio">
-
-
-            <a href="registrate.html" class="boton">Registrate!</a>
-
-            <a href="" class="boton">Inicia sesión!</a>
-
-
-
-
-            <select id="idioma" name="idioma" title="Elegir un idioma">
-
-                <option value="1" title="español">🇪🇸&emsp; </option>
-                <option value="2" title="portugues">&#127477;</option>
-                <option value="3" title="inglés">&#127480;</option>
-
-            </select>
-
-        </nav>
-
-
-
-
+        
     </header>
-
-
+<body>
     <main>
-
-
         <h1 class="titulo">TOP 10 USUARIOS</h1>
 
-        <div class="contentList">
-
-            <div class="layerList">
+        <div class="contentList" id="userCarousel">
+            
+            <div class="layerList"  >
 
                 <h2>01</h2>
 
@@ -451,18 +445,18 @@
                         <img class="social-media-button-img" src="images/whatsapp.png" alt="whatsapp">
                     </a>
 
-
                 </div>
-
 
             </div>
 
         </div>
 
-
     </main>
+    <script src="js/cabecera.js"></script>
 
-
+    <script src="js/carrousel.js"></script>
+   
+    
 
 
 </body>

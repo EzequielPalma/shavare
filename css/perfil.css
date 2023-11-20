@@ -152,7 +152,7 @@ main {
   }
 
   #items {
-      top: 190px;
+      top:117px;
       right: 0px;
       position: absolute;
       left:0px;
@@ -417,3 +417,14 @@ text-decoration: none;
 
 }
 
+
+@media(max-width:500px){
+
+  .navBar {
+    min-height: 132px;
+    height: 40vw;  }
+
+    #areaBuscador {
+      width: 50vw;
+  }
+  }

@@ -428,6 +428,12 @@ background-color: #138DC7;
 }
 
 @media(max-width:500px){
+
+  
+
+  .botonCitar, .enviar{
+    font-size:4vw ;
+  }
   .iconosPosts{
     height: 3vw;
     width: auto;
@@ -447,8 +453,25 @@ background-color: #138DC7;
   }
 
   #areaBuscador {
-    width: 50vw;
+    min-height: 132px;
+    height: 40vw;  }
+
+  textarea#textAreaPost {
+    font-size: 4vw;
   }
+
+
+    #areaBuscador {
+      min-height: 132px;
+      height: 40vw;  
+    }
+
+    
+      .navBar {
+        min-height: 132px;
+        height: 40vw;  
+      }
+    
 }
 
 @media(max-width:800px){
@@ -494,7 +517,7 @@ background-color: #138DC7;
   }
 
   #items {
-      top: 190px;
+      top:117px;
       right: 0px;
       position: absolute;
       left:0px;
