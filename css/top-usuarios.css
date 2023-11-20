@@ -27,7 +27,6 @@ body {
     min-height: 20%;
      width: 100%;
     padding: 25px 0px;
-    background-image: url(../images/banner.jpg);
     font-weight: bold;
     font-style: oblique;
   }
@@ -131,7 +130,7 @@ h1, p {
 .contentList{
     margin: 30px 0px;
     display: flex;
-    overflow: auto;
+    overflow: hide;
     width: 90%;
     max-width: 1200px;
     border-radius: 30px;
@@ -252,3 +251,56 @@ a {
   a {
     color: black;
   }
+
+  @media only screen and (max-width: 720px) {
+    .layerList {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #buscador {
+        top: 0;
+        right: 0;
+    }
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+.avatar:hover,
+.social-media-button-img:hover {
+transform: scale(1.1); 
+transition: transform 0.3s ease;
+}
+
+.layerList {
+  width: 100%; /* Ancho completo para dispositivos móviles */
+  margin-bottom: 20px;
+}
+
+/* Estilos específicos para dispositivos más grandes */
+@media only screen and (min-width: 768px) {
+  .botones-menu {
+      display: flex;
+      flex-direction: row;
+      margin-top: 0;
+  }
+
+  .registro-inicio {
+      display: flex;
+      flex-direction: row;
+      margin-top: 0;
+  }
+
+  .layerList {
+      width: 48%; /* Ancho ajustado para dispositivos más grandes */
+  }
+}
+
+/* Ajustes adicionales para dispositivos pequeños */
+@media only screen and (max-width: 480px) {
+  .layerList {
+      width: 100%; /* Mantener el ancho completo para dispositivos pequeños */
+  }
+}

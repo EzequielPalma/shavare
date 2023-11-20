@@ -14,50 +14,41 @@
 <body>
 
     <header>
-        <a href="index.html" class="logo">
-            <img class="imgLogo" src="images/logo.png" alt="logo">
-        </a>
+        <nav class="navBar">
+            <div class="navLogo">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+            </div>
 
-        <nav class="botones-menu">
-            <a href="recursos.html" class="boton">RECURSOS</a>
-            <a href="subir-hilo.html" class="boton">SUBIR</a>
-            <a href="perfil.html" class="boton">PERFIL</a>
-            <a href="top-usuarios.html" class="boton">TOP USUARIOS</a>
+            <div class="navToggle" id="toggle">
+                <span></span>
+                <span></span>
+                <span></span>                         
+            </div>
             
+            <div class="navItems" id="items">
+                <div id="itemsCuentaBuscador">
+                <div id="itemsCuentaUsuario">
+                    <a href="registrate.html" class="boton">Registrate!</a>
+                    <a href="" class="boton">Inicia sesión!</a>
+                </div>
+                <div id="buscador">
+                    <input  id="areaBuscador" type="text" placeholder="Buscar...">
+                    <button class="botonAreaBusqueda" type="submit" title="enviar la busqueda"><img class="botonBusqueda" src="images/v98_3427.png" alt=""></button>
+                    <button class="botonAreaBusqueda" type="submit" title="busqueda avanzada"><img class="botonBusqueda" src="images/plus.png" alt=""></button>                         
+               </div>
+               </div>
 
-        </nav>
-
-        <div id="buscador">
-            <input  id="areaBuscador" type="text" placeholder="Buscar...">
-            <button class="botonAreaBusqueda" type="submit" title="enviar la busqueda"><img class="botonBusqueda" src="images/v98_3427.png" alt=""></button>
-            <button class="botonAreaBusqueda" type="submit" title="busqueda avanzada"><img class="botonBusqueda" src="images/plus.png" alt=""></button>                         
-       </div>
-        
-        
-
-        
-        <nav class="registro-inicio">
-
-           
-
-            <a href="registrate.html" class="boton">Registrate!</a>
-
-            <a href="" class="boton">Inicia sesión!</a>
-
-            
-
-
-            <select id="idioma" name="idioma" title="Elegir un idioma">
+                <a href="recursos.html" class="boton">RECURSOS</a>
+                <a href="subir-hilo.html" class="boton">SUBIR</a>
+                <a href="perfil.html" class="boton">PERFIL</a>
+                <a href="top-usuarios.html" class="boton">TOP USUARIOS</a>
                 
-                <option value="1" title="español">🇪🇸&emsp; </option>
-                <option value="2" title="portugues">&#127477;</option>
-                <option value="3" title="inglés">&#127480;</option>
                 
-            </select>
-
-        </nav>
-
+            </div>
        
+        </nav>     
      
         
     </header>
@@ -65,31 +56,26 @@
 
     <main>
         <div id="sectionTop">
-             <a href="ejemplodehilo.html">
+            <a href="ejemplodehilo.html">
                 <h1 class="tituloHilo">
                     #1 Cómo subir recursos a Shavare
                 </h1>
-            </a>
-
-            <div>
-                <a   href="perfil.html">
-                <img class="avatarTop" src="images/perfilmoha.jpg" alt=""> 
-                </a>
-            
-        
-                <a href="perfil.html">
-                    
-                    <h1 class="tituloUsuario">@Mohaf5</h1>
-                </a>
-            </div>
-           
-          
-
-            <h1 id="fechaTop">HOY 15:25</h1>
-
+            </a>             
+         
         </div>
 
         <div class="postPrincipal">
+
+            <div class="usuarioPostDatos">
+                <a href="perfil.css"><img class="avatar" src="images/perfilmoha.jpg" alt="foto de perfil"></a>
+                <div>
+                    <h4>#1</h4>
+                    <h4>HOY 16:42</h4>
+                    <a href="perfil.html"><h4>@Mohaf5</h4></a>
+                </div>             
+               
+            </div>
+
             <div>
                 <p class="comentarioHilo">
                     Buenas, chicos!!! Aquí os dejo un video-tutorial 
@@ -98,9 +84,14 @@
                 </p>
                 
             
-                <div class="imagen">
-                    <img class="imgPantallazo" src="images/pantallazo.png" alt="Pantallazo">
+                <div id="capturaPantalla">
+                    <img src="images/pantallazo.png" alt="Pantallazo">
                 </div>
+            </div>
+            <div class="citarCaja">
+
+                <a href="subir-hilo.html" class="botonCitar">CITAR</a>
+                
             </div>
 
         </div>
@@ -181,7 +172,7 @@
             
             <form action="ejemplodehilo.html" method="post">
                 
-                    <textarea id="textAreaPost" name="textAreaPost" rows="15" cols="155" 
+                    <textarea id="textAreaPost" name="textAreaPost" rows="" cols="" 
                     placeholder="Se agradable con el creador del hilo!"></textarea>
                     
                     <div class="herramientasPosts">                                         
@@ -211,6 +202,7 @@
 
 
 
+    <script src="js/cabecera.js"></script>
 
 </body>
 

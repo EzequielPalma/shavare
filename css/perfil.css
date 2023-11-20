@@ -14,6 +14,12 @@ body {
   font-size: 27px;
   text-decoration: none;
 }
+
+main {
+  display: grid;
+  justify-items: center;
+}
+
   
 
 .navBar {
@@ -297,31 +303,26 @@ a.boton:hover {
     background-color: #D9D9D9;
     max-width: 500px;
     border-radius: 30px;
-    
-    
-}
-
-.social-media-lateral-button {
-
-    position: absolute;
     display: flex;
-    top: 250px;
-    left: 40px
-    
-    
-    
-    
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
+    
+    
+
 
 footer {
-    text-align: center;
-    max-height: 50px;
-    max-width: 500px;
-    margin: 30px auto 0px auto;
-    padding:25px;
+   
+    margin: 30px auto;
     background-color: #D9D9D9;
     border-radius: 30px;
     
+}
+
+footer div{
+  display: flex;
+
 }
 
 .social-media-button-img {
@@ -355,14 +356,16 @@ p {
 
 }
 
-#social-media-lateral-button {
+#socialMediaStats {
     background-color: #D9D9D9;
     border-radius: 30px;
-    position: absolute;
-    left: 100px;
-    top: 295px;
     
 }
+
+#socialMediaStatsDiv {
+  display: flex;
+}
+
 
 a {
 
@@ -373,9 +376,44 @@ text-decoration: none;
 
 
 
+@media (max-width:945px) {
 
+  .social-media-button-img {
+    height: 5vw;    
+}
+
+.social-media-button-imglat {
+    height: 5vw;   
+    
+}
+ 
+#socialMediaStats {
+  font-size: 2vw;
+  margin: auto 5px;
+
+}
+
+.avatar {
+  width: 30vw;
+  height: 30vw;
+}
+
+#nombre-usuario {
+  font-size: 4.5vw;
+}
+
+.avatar-usuario {
+  margin: 30px 5px;
+}
   
 
-
+}
   
+@media (max-width:345px) {
+
+  .avatar-usuario p {
+    font-size: 2vh;
+  }
+
+}
 

@@ -1,3 +1,6 @@
+#mainPerfil{
+    display: grid;
+}
 
 body {
     width: 100%;
@@ -11,7 +14,7 @@ body {
    
     font-size: 27px;
     text-decoration: none;
-}
+  }
     
   
   .navBar {
@@ -23,38 +26,38 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: unset;
-
+  
   }
-
+  
   .navLogo {
     top: 44px;
     margin-left: 20px;
     position: relative;
-
-
-  }
-
   
-
-
-
+  
+  }
+  
+  
+  
+  
+  
   .navItems {
     margin: 15px;
     width: 100%;
    
    
   }
-
+  
   #items {
     top: 250px;
     position: sticky;
     left: 330px;
   }
-
+  
   .navToggle {
     display: none;
   }
-
+  
   #buscador {
     display: flex;
     position: sticky;
@@ -63,29 +66,64 @@ body {
     margin-bottom: 8px;
     font-size: 20px;
   }
-
+  
+  #botonAreaBusqueda:hover {
+    cursor: grab;
+   
+    color: white;
+  }
+  
+  .botonBusqueda {
+    height: 15px;
+    background-color: #138DC7;
+    border-radius: 500px;
+    padding: 4px;
+  }
+  
+    
+  .botonAreaBusqueda {
+      background-color: #138DC7;
+      border-radius: 500px;
+      border: none;
+      margin-left: 10px;
+    }
+  
+    #areaBuscador {
+      width: 258px;
+      border-radius: 30px;
+      border: none;
+      font-size: 13px;
+      border-radius: 30px;
+    }
+  
+    #botonAreaBusqueda:hover {
+      cursor: grab;
+     
+      color: white;
+    }
+  
   #itemsCuentaUsuario{
     margin: 15px 0px 18px 0px;
     bottom: 20px;
     position: sticky;
     right: 113px;
   }
-
+  
   #itemsCuentaBuscador {
     top: -60px;
     left: 1000px;
     position: absolute;
   }
-
+  
   
   @media(max-width:500px){
     
     .navLogo img {
     width: 64vw;
   }
-
+  
   }
-
+  
   @media (max-width:1024px) {
     
     .navBar {
@@ -107,24 +145,25 @@ body {
         right: 0px;
         max-width: none;
     }
-
+  
     #items {
         top: 190px;
         right: 0px;
         position: absolute;
-        left:0px
+        left:0px;
+        z-index: 2; 
       }
-
+  
       #buscador {
         position: sticky;
         left: 100px;
         top: 200px
       }
-
+  
     .navItems a {
         width: 80%;
     }
-
+  
     .navToggle {
         display: flex !important;
         flex-direction: column;
@@ -133,9 +172,9 @@ body {
         position: relative;
         
     }
-
+  
    
-
+  
     .navToggle span {
         width: 30px;
         height: 4px;
@@ -146,31 +185,31 @@ body {
         transition: all 0.2s linear;
         position: sticky;
     }
-
+  
     .close span {
         transform: rotate(45deg) translate(0px, 0px);
     }
-
+  
     .close span:nth-child(2) {
         display: none;
     
     }
-
+  
     .close span:nth-child(3) {
         transform: rotate(-45deg) translate(-5px, 1px);
-
+  
     }
-
+  
     .open {transform: translateX(0) !important;}
-
+  
     .navLogo {
         margin: 0px auto 0px auto;
     }
-
+  
     #itemsCuentaUsuario {
         position: static;  
     }
-
+  
     #itemsCuentaBuscador {
         
         position: static;
@@ -178,9 +217,9 @@ body {
   }
     
   
- 
   
-
+  
+  
   
   nav.botones-menu {
     margin-top:60px;
@@ -217,175 +256,119 @@ body {
   
   }
   
-  .icono {
-    width: 20px;
     
+    img.icono-movil {
+      height: 20px;
+      width: 15px;
+      
+    }
+    
+    p {
+      font-size: 20px;
+    }
+    
+    a:hover {
+      cursor: grab;
+      color: white;
+    
+    
+    }
+    
+    
+    .cont-main{
+      margin: 15px;
+      font-size: 20px;
+    }
+    
+  
+  
+  .avatar {
+      border-radius: 500px;
+      height: 300px;
+     
+  }
+  
+  .avatar-usuario {
+      
+      
+     
+      text-align: center;
+      margin: 30px auto 30px auto;
+      padding: 25px;
+      background-color: #D9D9D9;
+      max-width: 500px;
+      border-radius: 30px;
+      
+      
+  }
+  
+  .social-media-lateral-button {
+  
+      position: absolute;
+      display: flex;
+      top: 250px;
+      left: 40px
+      
+      
+      
+      
+  }
+  
+  footer {
+      text-align: center;
+      max-height: 50px;
+      max-width: 500px;
+      margin: 30px auto 0px auto;
+      padding:25px;
+      background-color: #D9D9D9;
+      border-radius: 30px;
+      
+  }
+  
+  .social-media-button-img {
+      height: 40px;
+      border-radius: 30px;
+      
+      margin: 15px;
+  }
+  
+  .social-media-button-imglat {
+      height: 40px;
+      border-radius: 30px;
+      
+      
+  }
+  
+  
+  
+  .a-lat{
+     
+      display: list-item;
+      list-style: none;
+      color: black;
+      text-decoration: none;
+      margin:10px;
   }
   
   p {
-    font-size: 20px;
-  }
-  
-  a:hover {
-    cursor: grab;
-    color: white;
-  
+      max-width: 500px;
+      max-height: 200px;
   
   }
   
-  
-  .cont-main{
-    margin: 15px;
-    font-size: 20px;
-  }
-  
-  
-  .top-30{
-    background-color: #253A4E;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    font-size: 18px;
-    width: 230px;
-    height: 36px;
-    border-radius: 10px;
-  }
-  .caja {
-    margin-top: 20px;
-    background-color: #ccc;
-    padding: 20px;
-    width: 90%;
-    border-radius:15px;
-  }
-  
-  .titulo {
-    color:#233f5a;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .contenido {
-    display: flex;
-  }
-  
-  .parrafo {
-    flex: 1;
-    margin-right: 20px;
-  }
-  
-  .imagen {
-    flex: 1;
-    text-align: center;
-  }
-  
-  .imagen img {
-    max-width: 100%;
-    max-height: 200px;
-  }
-  
-  .caja-abajo {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-top: 10px;
-    width: 92%;
-    background-color: #ccc;
-    padding: 5px;
-    border-radius: 15px;
-  }
-  
-  .imagen-rrss {
-    margin-right: 5px;
-    margin-left: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; /* Alinea los elementos a la derecha */
-  }
-  .imagen-rrss img{
-    margin-right: 3px;
-    margin-left: 3px;
-  }
-  .estrellas {
-    display: flex;
-    align-items: center;
-  }
-  .valoracion{
-    margin-right: 5px;
-    margin-left: 5px;
-    font-style: italic;
-  }
-  footer{
-    display:flex;
-    justify-content: center;
-    background-color: #ccc;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  
-  .botonera-abajo{
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-    margin: 0px auto; 
-    font-size: 2.5vw;
-  }
-  
-  .navegacion {
-    text-decoration: none;
-    margin: 5px;
-    padding: 5px;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 5px;
-  }
-  
-  .numero {
-    margin: 5px;
-  }
-  
-  .separador {
-    margin: 5px;
+  #social-media-lateral-button {
+      background-color: #D9D9D9;
+      border-radius: 30px;
+      position: absolute;
+      left: 100px;
+      top: 295px;
+      
   }
   
   a {
-    color: black;
-    text-decoration: none;
+  
+  text-decoration: none;
   }
   
   
   
-  
-  
-  
-  .botonBusqueda {
-    height: 15px;
-    background-color: #138DC7;
-    border-radius: 500px;
-    padding: 4px;
-  }
-  
-    
-  .botonAreaBusqueda {
-      background-color: #138DC7;
-      border-radius: 500px;
-      border: none;
-      margin-left: 10px;
-    }
-  
-    #areaBuscador {
-      width: 258px;
-      border-radius: 30px;
-      border: none;
-      font-size: 13px;
-      border-radius: 30px;
-    }
-  
-    #botonAreaBusqueda:hover {
-      cursor: grab;
-     
-      color: white;
-    }

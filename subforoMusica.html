@@ -16,48 +16,41 @@
 <body>
 
     <header>
-        <a href="index.html" class="logo">
-            <img src="images/logo.png" alt="logo">
-        </a>
+        <nav class="navBar">
+            <div class="navLogo">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+            </div>
 
-        <nav class="botones-menu">
-            <a href="recursos.html" class="boton">RECURSOS</a>
-            <a href="subir-hilo.html" class="boton">SUBIR</a>
-            <a href="perfil.html" class="boton">PERFIL</a>
-            <a href="top-usuarios.html" class="boton">TOP USUARIOS</a>
+            <div class="navToggle" id="toggle">
+                <span></span>
+                <span></span>
+                <span></span>                         
+            </div>
             
+            <div class="navItems" id="items">
+                <div id="itemsCuentaBuscador">
+                <div id="itemsCuentaUsuario">
+                    <a href="registrate.html" class="boton">Registrate!</a>
+                    <a href="login.html" class="boton">Inicia sesión!</a>
+                </div>
+                <div id="buscador">
+                    <input  id="areaBuscador" type="text" placeholder="Buscar...">
+                    <button class="botonAreaBusqueda" type="submit" title="enviar la busqueda"><img class="botonBusqueda" src="images/v98_3427.png" alt=""></button>
+                    <button class="botonAreaBusqueda" type="submit" title="busqueda avanzada"><img class="botonBusqueda" src="images/plus.png" alt=""></button>                         
+               </div>
+               </div>
 
-        </nav>
-
-        
-        <div id="buscador">
-            <input  id="areaBuscador" type="text" placeholder="Buscar...">
-            <button class="botonAreaBusqueda" type="submit" title="enviar la busqueda"><img class="botonBusqueda" src="images/v98_3427.png" alt=""></button>
-            <button class="botonAreaBusqueda" type="submit" title="busqueda avanzada"><img class="botonBusqueda" src="images/plus.png" alt=""></button>                         
-       </div>
-        
-
-        
-        <nav class="registro-inicio">
-
-
-            <a href="registrate.html" class="boton">Registrate!</a>
-
-            <a href="" class="boton">Inicia sesión!</a>
-
-            
-
-
-            <select id="idioma" name="idioma" title="Elegir un idioma">
+                <a href="recursos.html" class="boton">RECURSOS</a>
+                <a href="subir-hilo.html" class="boton">SUBIR</a>
+                <a href="perfil.html" class="boton">PERFIL</a>
+                <a href="top-usuarios.html" class="boton">TOP USUARIOS</a>
                 
-                <option value="1" title="español">🇪🇸&emsp; </option>
-                <option value="2" title="portugues">&#127477;</option>
-                <option value="3" title="inglés">&#127480;</option>
                 
-            </select>
-
+            </div>
+       
         </nav>
-
        
      
         
@@ -288,6 +281,7 @@
     </footer>
     
     <script src="js/desplegable.js"></script>
+    <script src="js/cabecera.js"></script>
 </body>
 </html>
 
