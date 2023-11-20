@@ -13,7 +13,6 @@
 <body>
 
     <header>
-       
         <nav class="navBar">
             <div class="navLogo">
                 <a href="index.html" class="logo">
@@ -33,24 +32,19 @@
                         <a href="registrate.html" class="boton">Registrate!</a>
                         <a href="login.html" class="boton">Inicia sesión!</a>
                     </div>
+                    
                     <div id="buscador">
                         <input  id="areaBuscador" type="text" placeholder="Buscar...">
                         <button class="botonAreaBusqueda" type="submit" title="enviar la busqueda"><img class="botonBusqueda" src="images/v98_3427.png" alt=""></button>
-                        <button class="botonAreaBusqueda" type="submit" title="busqueda avanzada"><img class="botonBusqueda" src="images/plus.png" alt=""></button>                         
+                        <button class="botonAreaBusqueda" type="submit" title="busqueda avanzada"><img class="botonBusqueda" src="images/plus.png" alt=""></button>                        
+                    </div>
                 </div>
-               </div>
-
-                <a href="recursos.html" class="boton">RECURSOS</a>
-                <a href="subir-hilo.html" class="boton">SUBIR</a>
-                <a href="perfil.html" class="boton">PERFIL</a>
-                <a href="top-usuarios.html" class="boton">TOP USUARIOS</a>
-                
-                
-            </div>
-       
-     
-        
-    </header>
+                <a href="recursos.html" class="boton">Recursos</a>
+                <a href="subir-hilo.html" class="boton">Subir</a>
+                <a href="perfil.html" class="boton">Perfil</a>
+                <a href="top-usuarios.html" class="boton">Top usuarios</a>              
+            </div>    
+        </header>
 
     <body>
         <canvas id="myCanvas"></canvas>
@@ -62,7 +56,7 @@
         <script>
             var canvas = document.getElementById("myCanvas");
             var ctx = canvas.getContext("2d");
-            
+
             ctx.beginPath();
             ctx.rect(20, 40, 50, 50);
             ctx.fillStyle = "#FF0000";
