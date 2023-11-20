@@ -577,5 +577,9 @@ footer{
     #areaBuscador {
       width: 50vw;
   }
+
+  #items {
+    top: 35vw;
+  }
   }
 

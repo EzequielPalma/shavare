@@ -438,4 +438,8 @@ body {
               .navBar {
                 min-height: 132px;
                 height: 40vw;  }
+
+                #items {
+                  top: 35vw;
+                }
               }

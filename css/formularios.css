@@ -387,6 +387,10 @@ a.boton:hover {
     #areaBuscador {
       width: 50vw;
   }
+
+  #items {
+    top: 35vw;
+  }
   }
 
 
