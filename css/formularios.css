@@ -112,97 +112,6 @@ body {
 
 }
 
-@media (max-width:1024px) {
-  
-  .navBar {
-      flex-direction: column;
-  }
-  
-  .navItems{
-      display: flex;
-      flex-direction: column;
-      top: 195px;
-      width: 100%;
-      height: 110%;
-      background-color: #81B5F3;
-      margin: 30px auto 15px auto;
-      transform: translateX(-160%);
-      transition: 0.3s ease all;
-      text-align: center;
-      align-items: center;
-      right: 0px;
-      max-width: none;
-  }
-
-  #items {
-      top:117px;
-      right: 0px;
-      position: absolute;
-      left:0px;
-      z-index: 2; 
-    }
-
-    #buscador {
-      position: sticky;
-      left: 100px;
-      top: 200px
-    }
-
-  .navItems a {
-      width: 80%;
-  }
-
-  .navToggle {
-      display: flex !important;
-      flex-direction: column;
-      margin: 10px auto 10px auto;
-      position: relative;
-      
-  }
-
- 
-
-  .navToggle span {
-      width: 30px;
-      height: 4px;
-      background: white;
-      margin-bottom: 5px;
-      border-radius: 2px;
-      transform-origin: 5px 0px;
-      transition: all 0.2s linear;
-      position: sticky;
-  }
-
-  .close span {
-      transform: rotate(45deg) translate(0px, 0px);
-  }
-
-  .close span:nth-child(2) {
-      display: none;
-  
-  }
-
-  .close span:nth-child(3) {
-      transform: rotate(-45deg) translate(-5px, 1px);
-
-  }
-
-  .open {transform: translateX(0) !important;}
-
-  .navLogo {
-      margin: 0px auto 0px auto;
-  }
-
-  #itemsCuentaUsuario {
-      position: static;  
-  }
-
-  #itemsCuentaBuscador {
-      
-      position: static;
-    }
-}
-  
 
 
 
@@ -260,14 +169,26 @@ a.boton:hover {
   padding: 40px;
 }
 
-.form-titulo{
-  display:flex;
+.form-titulo {
+  display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  gap:10px;
- 
+  gap: 10px;
+  font-size: 30px;
+  height: 59px;
+  background-color: #253a4e;
+  color: #D9D9D9;
+  padding: 6px 12px;
+  border-radius: 10px;
+  max-width: 280px;
+  margin: 20px auto;
+  width: 250px;
 }
+   
+
+  
+ 
+
 
 .formulario{
   display:grid;
@@ -467,3 +388,105 @@ a.boton:hover {
       width: 50vw;
   }
   }
+
+
+  
+@media (max-width:1024px) {
+  
+  .navBar {
+      flex-direction: column;
+  }
+  
+  .navItems{
+      display: flex;
+      flex-direction: column;
+      top: 195px;
+      width: 100%;
+      height: 110%;
+      background-color: #81B5F3;
+      margin: 30px auto 15px auto;
+      transform: translateX(-160%);
+      transition: 0.3s ease all;
+      text-align: center;
+      align-items: center;
+      right: 0px;
+      max-width: none;
+  }
+
+  #items {
+      top:117px;
+      right: 0px;
+      position: absolute;
+      left:0px;
+      z-index: 2; 
+    }
+
+    #buscador {
+      position: sticky;
+      left: 100px;
+      top: 200px
+    }
+
+  .navItems a {
+      width: 80%;
+  }
+
+  .navToggle {
+      display: flex !important;
+      flex-direction: column;
+      margin: 10px auto 10px auto;
+      position: relative;
+      
+  }
+
+ 
+
+  .navToggle span {
+      width: 30px;
+      height: 4px;
+      background: white;
+      margin-bottom: 5px;
+      border-radius: 2px;
+      transform-origin: 5px 0px;
+      transition: all 0.2s linear;
+      position: sticky;
+  }
+
+  .close span {
+      transform: rotate(45deg) translate(0px, 0px);
+  }
+
+  .close span:nth-child(2) {
+      display: none;
+  
+  }
+
+  .close span:nth-child(3) {
+      transform: rotate(-45deg) translate(-5px, 1px);
+
+  }
+
+  .open {transform: translateX(0) !important;}
+
+  .navLogo {
+      margin: 0px auto 0px auto;
+  }
+
+  #itemsCuentaUsuario {
+      position: static;  
+  }
+
+  #itemsCuentaBuscador {
+      
+      position: static;
+    }
+
+    .form-titulo {
+   
+      font-size: 3vw;
+      height: 6vw;      
+      max-width: 280px;     
+      width: 25vw;
+    }
+}
+  
