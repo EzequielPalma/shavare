@@ -286,6 +286,7 @@ a {
     display: grid;
     grid-template-columns: auto auto auto auto; /* Crea tres columnas de igual ancho */
     grid-gap: 10px; /* Espacio entre las columnas */
+   
   }
 
 .grid-item {
@@ -511,33 +512,50 @@ footer{
 
   .grid-item {
     display: flex;
-    font-size: 1.5vw;
-    width: 5vw;
+    font-size: 2vw;
+    width: 10vw;
     justify-content: center;
     align-items: center;
 }
   .recurso-item{
     display: flex;
-    font-size: 1.5vw;
-    width: 5vw;
+    font-size: 1.8vw;
+    width: 10vw;
     justify-content: center;
     align-items: center;
 
 }
 
   .estrellas img {
-    width: 1vw;
+    width: 2vw;
 
   }
 
   .estrellas {
-    width: 5vw;
+    width: 10vw;
     display: block;
 
   }
 
   .grid-container {
-    justify-items: center;
+    display: grid;
+    justify-content: center;
+   
+    width: 20px;
+  }
+
+  .caja{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .recurso-item{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    
   }
 
   .title {

@@ -147,9 +147,7 @@ a.boton:hover {
   
 /* Register Annie */
 
-*{
-  box-sizing:border-box;
-}
+
 
 .content-form{
   font-family:'Montserrat', sans-serif;
@@ -201,11 +199,15 @@ a.boton:hover {
   font-size: 14px;
 }
 
+
 .formulario__grupo-input{
-  position: relative; 
+  position: relative;
+  
 }
 
 .formulario__input{
+  box-sizing: border-box;
+  box-sizing:content-form; 
   width: 100%;
   background-color: #efefef;
   border:3px solid transparent;
