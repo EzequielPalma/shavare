@@ -419,17 +419,17 @@ background-color: #138DC7;
 
 
 
+
+
 @media(max-width:500px){
-  
+
+  #items {
+    top: 35vw;
+  }
+
   .navLogo img {
-  width: 64vw;
-}
-
-}
-
-@media(max-width:500px){
-
-  
+    width: 64vw;
+  }
 
   .botonCitar, .enviar{
     font-size:4vw ;
@@ -453,18 +453,14 @@ background-color: #138DC7;
   }
 
   #areaBuscador {
-    min-height: 132px;
-    height: 40vw;  }
+    width: 50vw; }
 
   textarea#textAreaPost {
     font-size: 4vw;
   }
 
 
-    #areaBuscador {
-      min-height: 132px;
-      height: 40vw;  
-    }
+    
 
     
       .navBar {

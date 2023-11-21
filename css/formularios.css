@@ -29,17 +29,13 @@ body {
 }
 
 
+
+
 .navItems {
   margin: 15px;
   width: 100%;
  
  
-}
-
-#items {
-  top: 250px;
-  position: sticky;
-  left: 330px;
 }
 
 .navToggle {
@@ -48,11 +44,23 @@ body {
 
 #buscador {
   display: flex;
-  position: sticky;
-  top: 169px;
-  left: 1100px;
-  margin-bottom: 8px;
+  
+  margin-top: 15px;
   font-size: 20px;
+}
+
+#itemsCuentaUsuario {
+  right: 41px;
+  position: relative;
+}
+
+#itemsCuentaBuscador {
+    bottom: -35px;
+    left: 27vw;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
 }
 
 #botonAreaBusqueda:hover {
@@ -90,27 +98,10 @@ body {
     color: white;
   }
 
-#itemsCuentaUsuario{
-  margin: 15px 0px 18px 0px;
-  bottom: 20px;
-  position: sticky;
-  right: 113px;
-}
-
-#itemsCuentaBuscador {
-  top: -60px;
-  left: 1000px;
-  position: absolute;
-}
 
 
-@media(max-width:500px){
-  
-  .navLogo img {
-  width: 64vw;
-}
 
-}
+
 
 
 
@@ -380,16 +371,6 @@ a.boton:hover {
   }
 }
 
-@media(max-width:500px){
-
-  .navBar {
-    min-height: 132px;
-    height: 40vw;  }
-
-    #areaBuscador {
-      width: 50vw;
-  }
-  }
 
 
   
@@ -416,7 +397,7 @@ a.boton:hover {
   }
 
   #items {
-      top:117px;
+      top:191px;
       right: 0px;
       position: absolute;
       left:0px;
@@ -488,7 +469,29 @@ a.boton:hover {
       font-size: 3vw;
       height: 6vw;      
       max-width: 280px;     
-      width: 25vw;
+      width: 28vw;
     }
 }
   
+
+@media(max-width:500px){
+  
+  .navLogo img {
+  width: 64vw;
+}
+
+
+
+.navBar {
+  min-height: 132px;
+  height: 40vw;  }
+
+  #areaBuscador {
+    width: 50vw;
+}
+
+#items {
+  top: 35vw;
+
+}
+}

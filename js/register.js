@@ -120,4 +120,4 @@ formulario.addEventListener('submit', (e) => {
 
 //Prompt
 var nombre = prompt("Ingresa tu nombre: ");
-alert("¡Hola " + nombre + " Bienvenida a Shavare! regístratre");
+alert("¡Hola " + nombre + "!" + " ¡Bienvenida a Shavare! Regístrate :)");

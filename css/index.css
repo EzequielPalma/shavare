@@ -47,36 +47,29 @@ body {
  
 }
 
-#items {
-  top: 250px;
-  position: sticky;
-  left: 330px;
-}
-
 .navToggle {
   display: none;
 }
 
 #buscador {
   display: flex;
-  position: sticky;
-  top: 169px;
-  left: 1100px;
-  margin-bottom: 8px;
+  
+  margin-top: 15px;
   font-size: 20px;
 }
 
-#itemsCuentaUsuario{
-  margin: 15px 0px 18px 0px;
-  bottom: 20px;
-  position: sticky;
-  right: 113px;
+#itemsCuentaUsuario {
+  right: 41px;
+  position: relative;
 }
 
 #itemsCuentaBuscador {
-  top: -60px;
-  left: 1000px;
-  position: absolute;
+    bottom: -35px;
+    left: 27vw;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
 }
 
 
@@ -111,7 +104,7 @@ body {
   }
 
   #items {
-      top:117px;
+      top:191px;
       right: 0px;
       position: absolute;
       left:0px
@@ -263,7 +256,7 @@ a:hover {
 }
 
 .titulo {
-  color:#233f5a;
+  color:black;
   font-size: 20px;
   font-weight: bold;
 }
@@ -395,7 +388,7 @@ a {
   @media (max-width:440px) {
 
     .estrellas img {
-      width: 2vw;
+      width: 4vw;
       height: auto;
     }
 
@@ -404,7 +397,7 @@ a {
     }
 
     .imagen-rrss img {
-      width: 2vw;
+      width: 4vw;
       height: auto;
     }
 
@@ -419,5 +412,9 @@ a {
 
       #areaBuscador {
         width: 50vw;
+    }
+
+    #items {
+      top: 35vw;
     }
     }
