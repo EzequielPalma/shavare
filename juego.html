@@ -64,6 +64,19 @@
             ctx.fillStyle = "#FF0000";
             ctx.fill();
             ctx.closePath();
+
+            ctx.beginPath();
+            ctx.rect(160, 10, 50, 10);
+            ctx.strokeStyle = "rgba(0, 0, 255, 0.5)";
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.arc(240, 100, 5, 0, Math.PI*2, false);
+            ctx.fillStyle = "green";
+            ctx.fill();
+            ctx.closePath();
+            
         </script>
     </body>
 

@@ -49,19 +49,11 @@ main {
 
 
 
-
-
 .navItems {
   margin: 15px;
   width: 100%;
  
  
-}
-
-#items {
-  top: 250px;
-  position: sticky;
-  left: 330px;
 }
 
 .navToggle {
@@ -70,12 +62,26 @@ main {
 
 #buscador {
   display: flex;
-  position: sticky;
-  top: 169px;
-  left: 1100px;
-  margin-bottom: 8px;
+  
+  margin-top: 15px;
   font-size: 20px;
 }
+
+#itemsCuentaUsuario {
+  right: 41px;
+  position: relative;
+}
+
+#itemsCuentaBuscador {
+    width: 400px;
+    bottom: -35px;
+    left: 60vw;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
 
 #botonAreaBusqueda:hover {
   cursor: grab;
@@ -112,18 +118,7 @@ main {
     color: white;
   }
 
-#itemsCuentaUsuario{
-  margin: 15px 0px 18px 0px;
-  bottom: 20px;
-  position: sticky;
-  right: 113px;
-}
 
-#itemsCuentaBuscador {
-  top: -60px;
-  left: 1000px;
-  position: absolute;
-}
 
 
 
@@ -421,74 +416,6 @@ background-color: #138DC7;
 
 
 
-@media(max-width:500px){
-
-  #items {
-    top: 35vw;
-  }
-
-  .navLogo img {
-    width: 64vw;
-  }
-
-  .botonCitar, .enviar{
-    font-size:4vw ;
-  }
-  .iconosPosts{
-    height: 3vw;
-    width: auto;
-  }
-
-  h4{
-    font-size: 2vw;
-  }
-
-  .avatar {
-    width: 9vw;
-    height: auto;
-  }
-
-  .comentarioHilo {
-    font-size: 4vw;
-  }
-
-  #areaBuscador {
-    width: 50vw; }
-
-  textarea#textAreaPost {
-    font-size: 4vw;
-  }
-
-
-    
-
-    
-      .navBar {
-        min-height: 132px;
-        height: 40vw;  
-      }
-    
-}
-
-@media(max-width:800px){
-#fechaTop {
-  font-size: 2vw;
-}
-.tituloHilo{
-  font-size: 2vw;
-
-}
-.tituloUsuario {
-  font-size: 2.5vw;
-
-}
-
-.avatarTop {
-  height: 5vw;
-  width: 5vw;
-}
-}
-
 
 @media (max-width:1024px) {
   
@@ -582,3 +509,72 @@ background-color: #138DC7;
     }
 }
   
+
+
+@media(max-width:500px){
+
+  #items {
+    top: 35vw;
+  }
+
+  .navLogo img {
+    width: 64vw;
+  }
+
+  .botonCitar, .enviar{
+    font-size:4vw ;
+  }
+  .iconosPosts{
+    height: 3vw;
+    width: auto;
+  }
+
+  h4{
+    font-size: 2vw;
+  }
+
+  .avatar {
+    width: 9vw;
+    height: auto;
+  }
+
+  .comentarioHilo {
+    font-size: 4vw;
+  }
+
+  #areaBuscador {
+    width: 50vw; }
+
+  textarea#textAreaPost {
+    font-size: 4vw;
+  }
+
+
+    
+
+    
+      .navBar {
+        min-height: 132px;
+        height: 40vw;  
+      }
+    
+}
+
+@media(max-width:800px){
+#fechaTop {
+  font-size: 2vw;
+}
+.tituloHilo{
+  font-size: 2vw;
+
+}
+.tituloUsuario {
+  font-size: 2.5vw;
+
+}
+
+.avatarTop {
+  height: 5vw;
+  width: 5vw;
+}
+}

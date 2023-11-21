@@ -58,13 +58,15 @@ body {
   position: relative;
 }
 
+
 #itemsCuentaBuscador {
-    bottom: -35px;
-    left: 27vw;
-    position: relative;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+  width: 400px;
+  bottom: -35px;
+  left: 60vw;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 
   

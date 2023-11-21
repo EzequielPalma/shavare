@@ -55,8 +55,9 @@ body {
 }
 
 #itemsCuentaBuscador {
+    width: 400px;
     bottom: -35px;
-    left: 27vw;
+    left: 60vw;
     position: relative;
     display: flex;
     flex-direction: column-reverse;
