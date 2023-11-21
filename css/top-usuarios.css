@@ -34,48 +34,39 @@ body {
   }
   
   
+
+.navItems {
+  margin: 15px;
+  width: 100%;
+ 
+ 
+}
+
+.navToggle {
+  display: none;
+}
+
+#buscador {
+  display: flex;
   
-  
-  
-  .navItems {
-    margin: 15px;
-    width: 100%;
-   
-   
-  }
-  
-  #items {
-    top: 250px;
-    position: sticky;
-    left: 330px;
-  }
-  
-  .navToggle {
-    display: none;
-  }
-  
-  #buscador {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+#itemsCuentaUsuario {
+  right: 41px;
+  position: relative;
+}
+
+#itemsCuentaBuscador {
+    bottom: -35px;
+    left: 27vw;
+    position: relative;
     display: flex;
-    position: sticky;
-    top: 169px;
-    left: 1100px;
-    margin-bottom: 8px;
-    font-size: 20px;
-  }
-  
-  #itemsCuentaUsuario{
-    margin: 15px 0px 18px 0px;
-    bottom: 20px;
-    position: sticky;
-    right: 113px;
-  }
-  
-  #itemsCuentaBuscador {
-    top: -60px;
-    left: 1000px;
-    position: absolute;
-  }
-  
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
   
   @media(max-width:500px){
     
@@ -269,6 +260,7 @@ body {
     @media (max-width: 500px) {
         #areaBuscador {
             width: 50vw;
+            
         }
         }
 
@@ -293,6 +285,7 @@ body {
             border-radius: 10px;
             max-width: 280px;
             margin-left: 5.5vw;
+            margin-top: 30px;
         }
            
             
