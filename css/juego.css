@@ -291,11 +291,24 @@ body {
 
 
 
+      
+    
+       
+
+      
+    
         canvas {
-            background: #eee;
-            display: block;
-            margin: 0 auto;
-            width: 50vw;
-            height: auto;
-          }
+          border: 1px solid #f1ebeb;
+          display: flex;
+          margin: 30px auto
+        }
+
+        #bricksCanvas {
+          height: 45vw;
+          width: 90vw;
+          background-color: #e7e6e6;
+       
+
+        }
+
         
