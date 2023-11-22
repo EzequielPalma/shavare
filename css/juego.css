@@ -300,15 +300,20 @@ body {
         canvas {
           border: 1px solid #f1ebeb;
           display: flex;
-          margin: 30px auto
+          margin: 40px auto
         }
 
         #bricksCanvas {
           height: 45vw;
           width: 90vw;
           background-color: #e7e6e6;
-       
+          
 
         }
 
-        
+        .botonBusqueda:hover {
+          transform: scale(1.1); 
+          transition: transform 0.3s ease;
+          }
+
+ 

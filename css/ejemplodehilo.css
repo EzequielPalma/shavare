@@ -17,6 +17,7 @@ body {
 main {
   display: grid;
   justify-content: center;
+  justify-items: center;
 }
 
 #capturaPantalla img {
@@ -578,3 +579,13 @@ background-color: #138DC7;
   width: 5vw;
 }
 }
+
+#publicidad {
+  width: 30vw;
+  margin-top: 5vw;
+}
+
+#publicidad:hover, .botonBusqueda:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease;
+  }

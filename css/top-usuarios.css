@@ -438,3 +438,9 @@ body {
                   top: 35vw;
                 }
               }
+
+           
+              .avatar:hover, .social-media-button-img:hover, .botonBusqueda:hover {
+              transform: scale(1.1); 
+              transition: transform 0.3s ease;
+              }
