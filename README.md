@@ -1,6 +1,6 @@
 
 # Shavare
-
+![Shavare Logo](https://github.com/EzequielPalma/shavare/blob/main/images/logo.png)
 
 
 Shavare es una plataforma web diseñada para facilitar el intercambio de recursos a través de internet. Se trata de un foro responsive que permite a los usuarios compartir y discutir diversos recursos en línea. Desde tutoriales y enlaces útiles hasta archivos descargables, Shavare es el lugar ideal para la comunidad en línea que busca compartir conocimientos.
