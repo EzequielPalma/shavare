@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Shavare</title>
-    <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" href="images/favicon.png">
-    
-    <link rel="stylesheet" href="css/formularios.css">
+
+    <link rel="stylesheet" href="css/formularios-hilo.css">
 </head>
 
 <body>
+
     <header>
         <nav class="navBar">
             <div class="navLogo">
@@ -47,8 +47,95 @@
                 <a href="top-usuarios.html" class="boton">Top usuarios</a>              
             </div>    
         </header>
-    <body>
-        
-    </body>
+    <main>
+
+        <section>
+
+            <form id="subir-hilo" method="GET" action=''>
+                <section>
+                    <h1 class="como-boton">Sube tu recurso!</h1>
+                </section>
+
+                <section class="title-user-box">
+
+                    <label for="mensaje" ><p class="thread-title-p">Título:</p> </label>
+                    <form id="miFormulario" class="thread-title">
+                        
+                        <p id="mensajeError" ></p>
+                        <input type="text" id="titulo" class="label-title"name="mensaje" oninput="validarMensaje()" placeholder="Titulo del hilo">
+                    
+                       
+                    
+                        <div class="menu-icon" onclick="toggleMenu()">☰ Categorías</div>
+
+                        <div class="mobile-menu">
+                            <label><input type="checkbox" value="Programación"> Programación</label>
+                            <label><input type="checkbox" value="Música"> Música</label>
+                            <label><input type="checkbox" value="Deportes"> Deportes</label>
+                            <label><input type="checkbox" value="Off-topic"> Off-topic</label>
+                        </div>    
+                    </form>
+
+                    
+            
+                    <section class="category-box"><label for="thread-selection" class="category-text">Categoría</label>
+                        <select id="thread-selection" class="categories-options">
+                            <option value="Programación">Programación</option>
+                            <option value="Música">Música</option>
+                            <option value="Deportes">Deportes</option>
+                            <option value="Off-topic">Off-topic</option>
+                        </select>
+                    </section>
+                   
+                </section>
+            </form>
+
+
+            <!-- <form>
+                    <label for="recurso" minlength="10" maxlength="800">Desarrolla tu recurso:
+                        <textarea id="recurso" name="recurso" rows="25" cols="25"
+                            placeholder="Escribe aqui el post!" required></textarea>
+                    </label>
+
+                    <label for="sube-archivo">¡Sube tu archivo!:
+                        <input id="sube-archivo" type="file" name="file">
+                    </label>
+                    <input class="enviar" type="submit" value="Enviar">
+            </form> -->
+
+            <form action="" class="second-form">
+                <label for=""><p class="second-form-p">Desarrolla tu post</p></label>
+                <div class="post-editor">
+                    <!-- Botones del menú -->
+                    <div class="editor-buttons">
+                        <button onclick="insertText('🙂')">😊</button>
+                        <button onclick="insertText('👍')">👍</button>
+                        <button onclick="insertText('🙌')">🙌</button>
+                        <button onclick="insertText('🎉')">🎉</button>
+                        <button onclick="insertText('🔥')">🔥</button>
+                        <button onclick="insertText('🚀')">🚀</button>
+                       
+                        <!-- Puedes agregar más botones según tus necesidades -->
+                    </div>
+            
+                    <!-- Área de texto para el post -->
+                    <textarea id="post-text" class="post-text-mobil" rows="5" cols="50"></textarea>
+            
+                    <!-- Botón para publicar el post -->
+                    <input class="enviar" type="submit" value="Enviar">
+                </div>
+            </form>
+               
+           
+
+        </section>
+    </main>
+
+
+    <script src="js/subir-hilo.js"></script>
+    <script src="js/cabecera.js"></script>
+
+
+</body>
 
 </html>

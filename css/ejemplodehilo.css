@@ -441,7 +441,7 @@ background-color: #138DC7;
   }
 
   #items {
-      top:117px;
+      top:191px;
       right: 0px;
       position: absolute;
       left:0px;
@@ -449,7 +449,6 @@ background-color: #138DC7;
     }
 
     #buscador {
-      position: sticky;
       left: 100px;
       top: 200px
     }

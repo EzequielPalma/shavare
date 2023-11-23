@@ -370,7 +370,7 @@ a.boton:hover {
       flex-direction: column;
       top: 195px;
       width: 100%;
-      height: 110%;
+      height: 300%;
       background-color: #81B5F3;
       margin: 30px auto 15px auto;
       transform: translateX(-160%);
@@ -390,7 +390,6 @@ a.boton:hover {
     }
 
     #buscador {
-      position: sticky;
       left: 100px;
       top: 200px
     }

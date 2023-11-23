@@ -139,7 +139,6 @@ body {
     }
 
     #buscador {
-      position: sticky;
       left: 100px;
       top: 200px
     }
