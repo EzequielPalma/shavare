@@ -315,4 +315,7 @@ body {
           transition: transform 0.3s ease;
           }
 
- 
+ #margen {
+  height: 15vw;
+  width: auto;
+ }

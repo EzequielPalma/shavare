@@ -98,7 +98,7 @@ function collisionDetection() {
           y > b.y &&
           y < b.y + brickHeight
         ) {
-          dy = -dy +5;
+          dy = -dy*1.5;
 
           b.status = 0;
         }

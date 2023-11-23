@@ -2,9 +2,9 @@ $(document).ready(function () {
     $('#userCarousel').slick({
         infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToScroll: 1,
         autoplay: true, 
-        autoplaySpeed: 3000, 
+        autoplaySpeed: 1000, 
   
         responsive: [
             {
@@ -19,12 +19,7 @@ $(document).ready(function () {
                     slidesToShow: 2
                 }
             },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 2
-                }
-            },
+           
 
             {
                 breakpoint: 350,
